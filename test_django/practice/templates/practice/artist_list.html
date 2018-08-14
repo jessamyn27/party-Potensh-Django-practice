@@ -1,0 +1,9 @@
+<h4>List of Artists</h4>
+<ul>
+
+{% for artist in artists %}
+  <li>{{artist.name}}</li>
+  <li>{{artist.nationality}}</li>
+  <li><img src={{artist.photo_url}}></li>
+  {% endfor %}
+</ul>
